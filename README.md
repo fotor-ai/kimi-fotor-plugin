@@ -3,7 +3,7 @@
 <p align="center"><img src="assets/logo.svg" width="72" alt="Fotor logo" /></p>
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=version&amp;message=0.7.0-test.2&amp;color=087f8c&amp;style=flat-square" alt="Version" />
+  <img src="https://img.shields.io/static/v1?label=version&amp;message=0.7.0-test.3&amp;color=087f8c&amp;style=flat-square" alt="Version" />
   <img src="https://img.shields.io/static/v1?label=channel&amp;message=test&amp;color=a56800&amp;style=flat-square" alt="Release channel" />
   <a href="LICENSE"><img src="https://img.shields.io/static/v1?label=license&amp;message=Apache-2.0&amp;color=57606a&amp;style=flat-square" alt="Apache-2.0 license" /></a>
 </p>
@@ -16,7 +16,7 @@ actually been published before using a GitHub installation command.
 | Field | Value |
 | --- | --- |
 | Plugin | `fotor` |
-| Version | `0.7.0-test.2` |
+| Version | `0.7.0-test.3` |
 | Release channel | `test` |
 | MCP endpoint | `https://mcp.fotor.com/mcp` |
 | Client baselines | CLI 2.3.3; Desktop 1.1.4 with separately recorded embedded core |
@@ -61,7 +61,7 @@ Record the source and existing enabled state; preserve valid user settings.
 ### Kimi skills and native connection
 
 Start a fresh session or native reload. Verify plugin `fotor`, version
-**0.7.0-test.2**, the current skill directories and one plugin-owned service.
+**0.7.0-test.3**, the current skill directories and one plugin-owned service.
 Explicit skills are qualified, for example `/skill:fotor:fotor-connect`.
 The actual service name in the tested clients is `plugin-fotor:fotor`; use native
 MCP status/settings and `/mcp-config login plugin-fotor:fotor` when consent is
