@@ -1,0 +1,24 @@
+{
+  "name": "fotor",
+  "version": "0.7.0",
+  "description": "Connect Fotor to Kimi Code for image and video tools, media uploads, website access and account credits.",
+  "author": {
+    "name": "Fotor"
+  },
+  "homepage": "https://www.fotor.com",
+  "license": "Apache-2.0",
+  "keywords": [
+    "fotor",
+    "kimi-code",
+    "images",
+    "video",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": {
+    "fotor": {
+      "url": "https://mcp.fotor.com/mcp",
+      "auth": "oauth"
+    }
+  }
+}
