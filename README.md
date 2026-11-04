@@ -3,7 +3,7 @@
 <p align="center"><img src="assets/logo.svg" width="72" alt="Fotor logo" /></p>
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=version&amp;message=0.7.0&amp;color=087f8c&amp;style=flat-square" alt="Version" />
+  <img src="https://img.shields.io/static/v1?label=version&amp;message=0.8.0&amp;color=087f8c&amp;style=flat-square" alt="Version" />
   <img src="https://img.shields.io/static/v1?label=channel&amp;message=production&amp;color=238636&amp;style=flat-square" alt="Release channel" />
   <a href="LICENSE"><img src="https://img.shields.io/static/v1?label=license&amp;message=Apache-2.0&amp;color=57606a&amp;style=flat-square" alt="Apache-2.0 license" /></a>
 </p>
@@ -16,14 +16,14 @@ actually been published before using a GitHub installation command.
 | Field | Value |
 | --- | --- |
 | Plugin | `fotor` |
-| Version | `0.7.0` |
+| Version | `0.8.0` |
 | Release channel | `production` |
 | MCP endpoint | `https://mcp.fotor.com/mcp` |
 | Client baselines | CLI 2.3.3; Desktop 1.1.4 with separately recorded embedded core |
 
 ## Features and verification
 
-The five skills cover connection/model queries, images, video, uploads and account
+The six skills cover connection/model queries, images, video, audio, uploads and account
 credits. The manifest enables native discovery of the complete service tool list,
 subject to user permissions. Shared workflows use actual tool schemas and retain
 the ordinary pre-submission credit notice. No bridge, installation hook or plugin
@@ -61,7 +61,7 @@ Record the source and existing enabled state; preserve valid user settings.
 ### Kimi skills and native connection
 
 Start a fresh session or native reload. Verify plugin `fotor`, version
-**0.7.0**, the current skill directories and one plugin-owned service.
+**0.8.0**, the current skill directories and one plugin-owned service.
 Explicit skills are qualified, for example `/skill:fotor:fotor-connect`.
 The actual service name in the tested clients is `plugin-fotor:fotor`; use native
 MCP status/settings and `/mcp-config login plugin-fotor:fotor` when consent is
@@ -78,10 +78,7 @@ and open it unchanged once. Ask the user to confirm the result; separate manual
 fallback and an already signed-in website from automatic opening or first login.
 WebBridge is not required by Fotor.
 
-Credit queries return the actual balance. The common credit workflow can deliver
-a validated pricing link for low balance or an explicit top-up request; payments
-remain with the user. Balance-only instructions suppress the link and do not open
-a browser. See the [credit workflow](skills/fotor-connect/references/credits.md).
+To check your own Fotor credit balance, use the [balance lookup](skills/fotor-connect/references/credits.md). The reply contains the balance or its unavailability; this flow does not open a browser.
 
 ### Kimi updates and removal
 
@@ -123,6 +120,8 @@ Desktop uses Settings → Plugins → Add plugin with the same source. Review na
 
 
 ## Workflows
+
+Audio workflows cover soundtrack composition, new tracks, song editing, speech, podcasts and vocal separation. Consult the installed audio skill when available.
 
 Read [MCP workflows](skills/fotor-connect/references/mcp-integration.md#runtime-workflow),
 [media preparation](skills/fotor-connect/references/media-upload.md) and
